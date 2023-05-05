@@ -1,0 +1,11 @@
+.clear_button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.account_button {
+    color: red;
+    border-color: red;
+    border-radius: 5px;
+    font-weight: bolder;
+}

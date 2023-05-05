@@ -1,0 +1,153 @@
+*,
+::before *,
+::after * {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 25rem;
+    margin: 0;
+}
+
+.blue_background {
+    background-color: rgb(62, 64, 149);
+}
+
+.light_blue_background {
+    background-color: rgba(62, 64, 149, 0.2);
+}
+
+.violet_background {
+    background-color: rgb(153, 102, 204);
+}
+
+.light_violet_background {
+    background-color: rgba(153, 102, 204, 0.2);
+}
+
+.centered_elements {
+    text-align: center;
+}
+
+button:hover,
+a:hover {
+    box-shadow: 0 3px 3px 0;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (width < 25rem) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        padding-bottom: 1rem;
+    }
+}
+
+section.primary_nav_buttons {
+    margin: auto 0;
+}
+
+nav button {
+    margin: auto 0.5rem;
+    background: none;
+    border-radius: 1rem;
+    border-color: rgb(62, 64, 149);
+}
+
+#nav_logo {
+    margin: 0;
+}
+
+main > * {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.left_text {
+    padding-right: 1rem;
+}
+
+.right_text {
+    padding-left: 1rem;
+}
+
+img {
+    margin: auto;
+}
+
+header {
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+header div {
+    box-shadow: 0 0 1rem 0.8rem rgb(153, 102, 204);
+    padding-bottom: 1rem;
+    z-index: 9999;
+}
+
+#main_services_button {
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.grid_3 {
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+figure {
+    display: flex;
+    margin: 0;
+    border: double 0.25rem black;
+    padding: 0.5rem;
+}
+
+figure > * {
+    align-self: center;
+}
+
+footer section > * {
+    margin: 0 auto;
+}
+
+.footer_nav_buttons {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+footer button {
+    border-radius: 1rem;
+    display: block;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    padding: 0.5em;
+}
+
+.email {
+    height: fit-content;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 1rem;
+    background-color: rgb(255, 115, 0);
+    color: white;
+}
+
+footer > p {
+    margin: 0;
+}
