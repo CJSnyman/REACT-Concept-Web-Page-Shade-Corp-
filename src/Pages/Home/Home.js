@@ -22,17 +22,17 @@ const Home = () => {
                         craigsnyman200@gmail.com
                     </a>
                 </div>
-                <img src={heroImg} alt="Hero Image" width="100%" />
+                <img src={heroImg} alt="Hero sails" width="100%" />
             </header>
             <section className="light_violet_background grid">
-                <img src={servicesImg} alt="Services image" width="80%" />
+                <img src={servicesImg} alt="Services sails" width="80%" />
                 <div className="grid_item right_text">
                     <h2>From Custom Shade Sails to Vehicle Shade Ports. We got you covered.</h2>
                     <p>
                         Our Custom Shade Sails is perfect for most applications and comes in
                         multiple colors. We also provide Vehicle Shade Ports to protect your
                         vehicles, Tension Membrane Structures for lightweight energy conserving
-                        roofing systems and Stretch Tents for that akward shaped areas.{" "}
+                        roofing systems and Stretch Tents for that akward shaped areas.
                     </p>
                     <Button
                         className="blue_background"
