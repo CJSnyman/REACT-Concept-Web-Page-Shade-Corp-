@@ -12,8 +12,8 @@ const Services = () => {
                     <h3>Shade Sails</h3>
                     <p>
                         The advances that has been made with the fabric allows us to install the
-                        sails without the support of structural steel. This make the product safer
-                        and provide an open space below the sails.
+                        sails without the support of structural steel. This makes the product safer
+                        and provides an open space below the sails.
                     </p>
                     <p>
                         Being customizable the shade sails can be adapted to fit any area like a
@@ -40,7 +40,7 @@ const Services = () => {
                         The fabric used for Tension Membranes is incredibly strong. It can easily
                         handle any load that is associated with roofs. The fabric is also able to
                         withstand extreme cold and heat while being fire resistant and can easily be
-                        cleaned with just a rinse with water.
+                        cleaned with just a water rinse.
                     </p>
                 </div>
                 <img src={tensonMembranes} alt="Tension Membranes" width="80%" />
@@ -50,9 +50,9 @@ const Services = () => {
                 <div className="grid_item right_text">
                     <h3>Waterproof Stretch Tents</h3>
                     <p>
-                        This product is perfect for displeasing outdoor spaces into usable space.
-                        The product uphold to international safety standards while being easily
-                        branded and is machine washable
+                        This product is perfect for turning unpleasant outdoor spaces into usable
+                        space. The product conforms to international safety standards while being
+                        easily branded and is machine washable.
                     </p>
                 </div>
             </section>

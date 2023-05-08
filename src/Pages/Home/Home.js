@@ -33,7 +33,7 @@ const Home = (props) => {
                         Our Custom Shade Sails is perfect for most applications and comes in
                         multiple colors. We also provide Vehicle Shade Ports to protect your
                         vehicles, Tension Membrane Structures for lightweight energy conserving
-                        roofing systems and Stretch Tents for that akward shaped areas.
+                        roofing systems and Stretch Tents for that awkward shaped areas.
                     </p>
                     <Button
                         className="blue_background"

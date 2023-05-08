@@ -14,13 +14,13 @@ const About = () => {
                 </p>
                 <p>
                     Our sails provide excellent protection against the sun and is aesthetically
-                    pleasing. While also being durable and long lasting. The Shade Corp team is
+                    pleasing while also being durable and long lasting. The Shade Corp team is
                     experienced professionals that is dedicated to excellent customer service
                     through the whole process.
                 </p>
                 <p>
-                    Our sails can be customized to fit any design requirements and is available in
-                    many a wide range of colors, sizes and shapes.
+                    Our sails can be customized to fit any design requirements and is available in a
+                    wide range of colors, sizes and shapes.
                 </p>
                 <p>
                     Whether you want shade for your home, business or community space, we have the
