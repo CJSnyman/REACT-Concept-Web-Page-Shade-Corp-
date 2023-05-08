@@ -1,10 +1,11 @@
 import Button from "../Button/Button";
+import { ReactComponent as WebLogo } from "../../assets/websiteLogo.svg";
 
 const Footer = (props) => {
     return (
         <footer className="centered_elements">
             <section className="violet_background grid_3">
-                <img src={props.logo} alt="Footer Shade Corp Logo" className="grid_item_3" />
+                <WebLogo />
                 <div className="footer_nav_buttons">
                     <Button
                         className="secondary_nav_button blue_background"
@@ -25,11 +26,17 @@ const Footer = (props) => {
                         onClick={() => props.handlePageChange("about")}
                     ></Button>
                 </div>
-                <a className="footer email" href="mailto:craigsnyman200@gmail.com">
-                    craigsnyman200@gmail.com
-                </a>
+                <div>
+                    <a className="footer email" href="mailto:craigsnyman200@gmail.com">
+                        craigsnyman200@gmail.com
+                    </a>
+                </div>
             </section>
-            <p className="blue_background">Created by Craig Snyman</p>
+            <p className="blue_background">
+                This is a Concept Project.
+                <br />
+                Created by <strong>Craig Snyman</strong>
+            </p>
         </footer>
     );
 };

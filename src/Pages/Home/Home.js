@@ -1,14 +1,15 @@
+import React from "react";
 import Button from "../../Components/Button/Button";
 import heroImg from "../../assets/Hero Image.jpg";
 import servicesImg from "../../assets/sailsimage4.jpg";
-import cjsnymanLogo from "../../assets/CJSnyman.png";
-import emoreeLogo from "../../assets/EMOREE.png";
-import profzesLogo from "../../assets/ProfZES.png";
+import { ReactComponent as CJSnymanLogo } from "../../assets/CJSnyman.svg";
+import { ReactComponent as ProfZESLogo } from "../../assets/ProfZES.svg";
+import { ReactComponent as EMOREELogo } from "../../assets/EMOREE.svg";
 import { AiFillClockCircle } from "react-icons/ai";
 import { MdStar } from "react-icons/md";
 import { GiPodiumWinner } from "react-icons/gi";
 
-const Home = () => {
+const Home = (props) => {
     return (
         <main>
             <header className="blue_background grid">
@@ -38,6 +39,7 @@ const Home = () => {
                         className="blue_background"
                         children="Services & Products"
                         id="main_services_button"
+                        onClick={() => props.handlePageChange("services")}
                     ></Button>
                 </div>
             </section>
@@ -62,13 +64,13 @@ const Home = () => {
                 <h2>Our Clients</h2>
                 <div className="grid_3">
                     <figure className="grid_item_3 client">
-                        <img className="" src={profzesLogo} alt="Prof ZES" />
+                        <ProfZESLogo />
                     </figure>
                     <figure className="grid_item_3 client">
-                        <img className="" src={cjsnymanLogo} alt="CJSnyman" />
+                        <CJSnymanLogo />
                     </figure>
                     <figure className="grid_item_3 client">
-                        <img className="" src={emoreeLogo} alt="EMOREE" />
+                        <EMOREELogo />
                     </figure>
                 </div>
             </section>

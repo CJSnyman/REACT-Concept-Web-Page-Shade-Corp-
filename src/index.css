@@ -5,12 +5,14 @@
 }
 
 body {
+    font-size: clamp(1rem, 3vw, 1.5rem);
     min-width: 25rem;
     margin: 0;
 }
 
 .blue_background {
     background-color: rgb(62, 64, 149);
+    color: white;
 }
 
 .light_blue_background {
@@ -19,6 +21,7 @@ body {
 
 .violet_background {
     background-color: rgb(153, 102, 204);
+    color: black;
 }
 
 .light_violet_background {
@@ -40,23 +43,46 @@ nav {
     justify-content: space-between;
 }
 
-@media (width < 25rem) {
-    nav {
+#burger_menu {
+    display: none;
+}
+
+@media (width <= 35rem) {
+    nav .primary_nav_buttons {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        z-index: 3;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        inset: 0 0 0 40%;
+        padding-top: 7rem;
+        transform-origin: right;
+        transform: scaleX(100%);
+        transition: transform ease-in-out 400ms;
     }
 
-    nav img {
-        padding-bottom: 1rem;
+    #primary_menu[data-invisible] {
+        transform: scaleX(0);
+    }
+
+    .primary_nav_button {
+        margin: 1rem;
+    }
+
+    #burger_menu {
+        display: block;
+        z-index: 4;
     }
 }
 
-section.primary_nav_buttons {
-    margin: auto 0;
+#menu {
+    display: grid;
+    align-items: center;
 }
 
 nav button {
-    margin: auto 0.5rem;
+    margin: auto 0.1rem;
     background: none;
     border-radius: 1rem;
     border-color: rgb(62, 64, 149);
@@ -73,7 +99,7 @@ main > * {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 }
 
 .left_text {
@@ -95,7 +121,7 @@ header {
 header div {
     box-shadow: 0 0 1rem 0.8rem rgb(153, 102, 204);
     padding-bottom: 1rem;
-    z-index: 9999;
+    z-index: 2;
 }
 
 #main_services_button {
@@ -112,6 +138,7 @@ header div {
 
 figure {
     display: flex;
+    flex-flow: column;
     margin: 0;
     border: double 0.25rem black;
     padding: 0.5rem;
@@ -122,12 +149,7 @@ figure > * {
 }
 
 footer section > * {
-    margin: 0 auto;
-}
-
-.footer_nav_buttons {
-    width: fit-content;
-    margin: 0 auto;
+    justify-self: center;
 }
 
 footer button {
@@ -140,14 +162,8 @@ footer button {
 }
 
 .email {
-    height: fit-content;
-    width: fit-content;
-    padding: 0.5em;
+    padding: 0.5rem;
     border-radius: 1rem;
     background-color: rgb(255, 115, 0);
     color: white;
-}
-
-footer > p {
-    margin: 0;
 }

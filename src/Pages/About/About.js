@@ -31,6 +31,11 @@ const About = () => {
                     improve.
                 </p>
             </section>
+            <h3 className="centered_elements light_blue_background">
+                Creator profile:
+                <br />
+                <a href="https://cjsnyman.netlify.app">Craig Snyman</a>
+            </h3>
         </main>
     );
 };
